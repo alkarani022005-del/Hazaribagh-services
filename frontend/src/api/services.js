@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3001/api';
-
+const BASE_URL = 'https://hazaribagh-services.onrender.com/api';
 export const getServices = async ({ search = '', category = '', page = 1 } = {}) => {
   const params = new URLSearchParams();
   if (search && search.trim()) params.append('search', search.trim());
